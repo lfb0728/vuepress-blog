@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git Feature分支 | 眼圈发黑</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="分享学习笔记的个人博客">
+    <link rel="preload" href="/assets/css/0.styles.9bcdb81a.css" as="style"><link rel="preload" href="/assets/js/app.aa818c5a.js" as="script"><link rel="preload" href="/assets/js/2.a90c0fc6.js" as="script"><link rel="preload" href="/assets/js/15.0160623f.js" as="script"><link rel="prefetch" href="/assets/js/10.b7aed2be.js"><link rel="prefetch" href="/assets/js/11.43186383.js"><link rel="prefetch" href="/assets/js/12.5f3fe30b.js"><link rel="prefetch" href="/assets/js/13.955c22c1.js"><link rel="prefetch" href="/assets/js/14.37bf7c32.js"><link rel="prefetch" href="/assets/js/16.34293169.js"><link rel="prefetch" href="/assets/js/17.74c14b2e.js"><link rel="prefetch" href="/assets/js/18.9fd0ff77.js"><link rel="prefetch" href="/assets/js/19.2c6d5bc1.js"><link rel="prefetch" href="/assets/js/20.e9f5ef1f.js"><link rel="prefetch" href="/assets/js/21.16716f25.js"><link rel="prefetch" href="/assets/js/22.6811daf1.js"><link rel="prefetch" href="/assets/js/23.1689a3c1.js"><link rel="prefetch" href="/assets/js/24.22c9f995.js"><link rel="prefetch" href="/assets/js/25.ca01154e.js"><link rel="prefetch" href="/assets/js/26.ef8172c5.js"><link rel="prefetch" href="/assets/js/27.2f2c5752.js"><link rel="prefetch" href="/assets/js/28.93cf253f.js"><link rel="prefetch" href="/assets/js/29.d623a3e1.js"><link rel="prefetch" href="/assets/js/3.a56835d4.js"><link rel="prefetch" href="/assets/js/30.58d75603.js"><link rel="prefetch" href="/assets/js/31.15733856.js"><link rel="prefetch" href="/assets/js/32.4ac181af.js"><link rel="prefetch" href="/assets/js/33.02a40772.js"><link rel="prefetch" href="/assets/js/4.138deb8d.js"><link rel="prefetch" href="/assets/js/5.b3d640f1.js"><link rel="prefetch" href="/assets/js/6.b6483625.js"><link rel="prefetch" href="/assets/js/7.a59345ca.js"><link rel="prefetch" href="/assets/js/8.ec131ddc.js"><link rel="prefetch" href="/assets/js/9.b4e1a2c1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9bcdb81a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">眼圈发黑</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="sidebar-link">Git</a></li><li><a href="/blog/guide/Git/2.Git 时光穿梭机-版本回退.html" class="sidebar-link">Git 时光穿梭机</a></li><li><a href="/blog/guide/Git/3.Git 工作区和暂存区.html" class="sidebar-link">Git 工作区和暂存区</a></li><li><a href="/blog/guide/Git/4.Git 撤销修改.html" class="sidebar-link">Git 撤销修改</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-feature分支"><a href="#git-feature分支" class="header-anchor">#</a> Git Feature分支</h1> <p>软件开发中，总有无穷无尽的新的功能要不断添加进来。</p> <p>添加一个新功能时，你肯定不希望因为一些实验性质的代码，把主分支搞乱了，所以，每添加一个新功能，最好新建一个feature分支，在上面开发，完成后，合并，最后，删除该feature分支。</p> <p>现在，你终于接到了一个新任务：开发代号为Vulcan的新功能，该功能计划用于下一代星际飞船。</p> <p>于是准备开发：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">git</span> switch -c feature-vulcan
+Switched to a new branch <span class="token string">'feature-vulcan'</span>
+</code></pre></div><p>5分钟后，开发完毕:</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">git</span> <span class="token function">add</span> vulcan.py.txt
+
+$ <span class="token function">git</span> status
+On branch feature-vulcan
+Changes to be committed:
+  <span class="token punctuation">(</span>use <span class="token string">&quot;git restore --staged &lt;file&gt;...&quot;</span> to unstage<span class="token punctuation">)</span>
+        new file:   vulcan.py.txt
+
+$ <span class="token function">git</span> commit -m <span class="token string">'add feature vulcan'</span>
+<span class="token punctuation">[</span>feature-vulcan f694ff5<span class="token punctuation">]</span> <span class="token function">add</span> feature vulcan
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> vulcan.py.txt
+
+</code></pre></div><p>切回<code>dev</code>，准备合并：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">git</span> switch dev
+</code></pre></div><p>一切顺利的话，feature分支和bug分支是类似的，合并，然后删除。</p> <p>但是！</p> <p>就在此时，接到上级命令，因经费不足，新功能必须取消！</p> <p>虽然白干了，但是这个包含机密资料的分支还是必须就地销毁：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">git</span> branch -d feature-vulcan // 删除分支
+error: The branch <span class="token string">'feature-vulcan'</span> is not fully merged.
+If you are sure you want to delete it, run <span class="token string">'git branch -D feature-vulcan'</span><span class="token builtin class-name">.</span>
+</code></pre></div><p>销毁失败。Git友情提醒，<code>feature-vulcan</code>分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用大写的<code>-D</code>参数。。</p> <p>现在我们强行删除：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">git</span> branch -D feature-vulcan
+Deleted branch feature-vulcan <span class="token punctuation">(</span>was f694ff5<span class="token punctuation">)</span>.
+</code></pre></div><p>删除成功！</p> <h2 id="小结"><a href="#小结" class="header-anchor">#</a> 小结</h2> <p>开发一个新feature，最好新建一个分支；</p> <p>如果要丢弃一个没有被合并过的分支，可以通过<code>git branch -D &lt;name&gt;</code>强行删除。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aa818c5a.js" defer></script><script src="/assets/js/2.a90c0fc6.js" defer></script><script src="/assets/js/15.0160623f.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git 配置命令别名 | 眼圈发黑</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="分享学习笔记的个人博客">
+    <link rel="preload" href="/assets/css/0.styles.9bcdb81a.css" as="style"><link rel="preload" href="/assets/js/app.aa818c5a.js" as="script"><link rel="preload" href="/assets/js/2.a90c0fc6.js" as="script"><link rel="preload" href="/assets/js/21.16716f25.js" as="script"><link rel="prefetch" href="/assets/js/10.b7aed2be.js"><link rel="prefetch" href="/assets/js/11.43186383.js"><link rel="prefetch" href="/assets/js/12.5f3fe30b.js"><link rel="prefetch" href="/assets/js/13.955c22c1.js"><link rel="prefetch" href="/assets/js/14.37bf7c32.js"><link rel="prefetch" href="/assets/js/15.0160623f.js"><link rel="prefetch" href="/assets/js/16.34293169.js"><link rel="prefetch" href="/assets/js/17.74c14b2e.js"><link rel="prefetch" href="/assets/js/18.9fd0ff77.js"><link rel="prefetch" href="/assets/js/19.2c6d5bc1.js"><link rel="prefetch" href="/assets/js/20.e9f5ef1f.js"><link rel="prefetch" href="/assets/js/22.6811daf1.js"><link rel="prefetch" href="/assets/js/23.1689a3c1.js"><link rel="prefetch" href="/assets/js/24.22c9f995.js"><link rel="prefetch" href="/assets/js/25.ca01154e.js"><link rel="prefetch" href="/assets/js/26.ef8172c5.js"><link rel="prefetch" href="/assets/js/27.2f2c5752.js"><link rel="prefetch" href="/assets/js/28.93cf253f.js"><link rel="prefetch" href="/assets/js/29.d623a3e1.js"><link rel="prefetch" href="/assets/js/3.a56835d4.js"><link rel="prefetch" href="/assets/js/30.58d75603.js"><link rel="prefetch" href="/assets/js/31.15733856.js"><link rel="prefetch" href="/assets/js/32.4ac181af.js"><link rel="prefetch" href="/assets/js/33.02a40772.js"><link rel="prefetch" href="/assets/js/4.138deb8d.js"><link rel="prefetch" href="/assets/js/5.b3d640f1.js"><link rel="prefetch" href="/assets/js/6.b6483625.js"><link rel="prefetch" href="/assets/js/7.a59345ca.js"><link rel="prefetch" href="/assets/js/8.ec131ddc.js"><link rel="prefetch" href="/assets/js/9.b4e1a2c1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9bcdb81a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">眼圈发黑</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="sidebar-link">Git</a></li><li><a href="/blog/guide/Git/2.Git 时光穿梭机-版本回退.html" class="sidebar-link">Git 时光穿梭机</a></li><li><a href="/blog/guide/Git/3.Git 工作区和暂存区.html" class="sidebar-link">Git 工作区和暂存区</a></li><li><a href="/blog/guide/Git/4.Git 撤销修改.html" class="sidebar-link">Git 撤销修改</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-配置命令别名"><a href="#git-配置命令别名" class="header-anchor">#</a> Git 配置命令别名</h1> <p>有没有经常敲错命令？比如<code>git status</code>？<code>status</code>这个单词真心不好记。</p> <p>如果敲<code>git st</code>就表示<code>git status</code>那就简单多了，当然这种偷懒的办法我们是极力赞成的。</p> <p>我们只需要敲一行命令，告诉Git，以后<code>st</code>就表示<code>status</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git config --global alias.st status
+</code></pre></div><p>好了，现在敲<code>git st</code>看看效果。</p> <p>当然还有别的命令可以简写，很多人都用<code>co</code>表示<code>checkout</code>，<code>ci</code>表示<code>commit</code>，<code>br</code>表示<code>branch</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git config --global alias.co checkout
+$ git config --global alias.ci commit
+$ git config --global alias.br branch
+</code></pre></div><p>以后提交就可以简写成：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git ci -m &quot;bala bala bala...&quot;
+</code></pre></div><p><code>--global</code>参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用。</p> <p>在<a href="https://www.liaoxuefeng.com/wiki/896043488029600/897889638509536" target="_blank" rel="noopener noreferrer">撤销修改<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>一节中，我们知道，命令<code>git reset HEAD file</code>可以把暂存区的修改撤销掉（unstage），重新放回工作区。既然是一个unstage操作，就可以配置一个<code>unstage</code>别名：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git config --global alias.unstage 'reset HEAD'
+</code></pre></div><p>当你敲入命令：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git unstage test.py
+</code></pre></div><p>实际上Git执行的是：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git reset HEAD test.py
+</code></pre></div><p>配置一个<code>git last</code>，让其显示最后一次提交信息：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git config --global alias.last 'log -1'
+</code></pre></div><p>这样，用<code>git last</code>就能显示最近一次的提交：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git last
+commit adca45d317e6d8a4b23f9811c3d7b7f0f180bfe2
+Merge: bd6ae48 291bea8
+Author: Michael Liao &lt;askxuefeng@gmail.com&gt;
+Date:   Thu Aug 22 22:49:22 2013 +0800
+
+    merge &amp; fix hello.py
+</code></pre></div><p>甚至还有人丧心病狂地把<code>lg</code>配置成了：</p> <div class="language- extra-class"><pre class="language-text"><code>git config --global alias.lg &quot;log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit&quot;
+</code></pre></div><p>来看看<code>git lg</code>的效果：</p> <p><img src="https://www.liaoxuefeng.com/files/attachments/919059728302912/0" alt="git-lg"></p> <p>为什么不早点告诉我？别激动，咱不是为了多记几个英文单词嘛！</p> <h2 id="配置文件"><a href="#配置文件" class="header-anchor">#</a> 配置文件</h2> <p>配置Git的时候，加上<code>--global</code>是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。</p> <p>配置文件放哪了？每个仓库的Git配置文件都放在<code>.git/config</code>文件中：</p> <div class="language- extra-class"><pre class="language-text"><code>$ cat .git/config 
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    bare = false
+    logallrefupdates = true
+    ignorecase = true
+    precomposeunicode = true
+[remote &quot;origin&quot;]
+    url = git@github.com:michaelliao/learngit.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &quot;master&quot;]
+    remote = origin
+    merge = refs/heads/master
+[alias]
+    last = log -1
+</code></pre></div><p>别名就在<code>[alias]</code>后面，要删除别名，直接把对应的行删掉即可。</p> <p>而当前用户的Git配置文件放在用户主目录下的一个隐藏文件<code>.gitconfig</code>中：</p> <div class="language- extra-class"><pre class="language-text"><code>$ cat .gitconfig
+[alias]
+    co = checkout
+    ci = commit
+    br = branch
+    st = status
+[user]
+    name = Your Name
+    email = your@email.com
+</code></pre></div><p>配置别名也可以直接修改这个文件，如果改错了，可以删掉文件重新通过命令配置。</p> <h2 id="小结"><a href="#小结" class="header-anchor">#</a> 小结</h2> <p>给Git配置好别名，就可以输入命令时偷个懒。我们鼓励偷懒。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aa818c5a.js" defer></script><script src="/assets/js/2.a90c0fc6.js" defer></script><script src="/assets/js/21.16716f25.js" defer></script>
+  </body>
+</html>
