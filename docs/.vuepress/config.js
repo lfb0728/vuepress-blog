@@ -39,9 +39,25 @@ module.exports = {
       // Git
       '/blog/guide/Git/': [
         '1.Git的安装到添加到本地仓库',
-        '2.Git 时光穿梭机-版本回退',
-        '3.Git 工作区和暂存区',
-        '4.Git 撤销修改'
+        '2.Git时光穿梭机-版本回退',
+        '3.Git工作区和暂存区',
+        '4.Git撤销修改',
+        '5.Git删除文件',
+        '6.Git远程仓库',
+        '7.Git添加远程仓库',
+        '8.Git从远程库克隆',
+        '9.Git创建分支与合并分支',
+        '10.Git解决冲突',
+        '11.Git分支管理策略',
+        '12.GitBug分支',
+        '13.GitFeature',
+        '14.Git多人协作',
+        '15.Git创建标签',
+        '16.Git操作标签',
+        '17.Git使用GitHub仓库',
+        '18.Git忽略特殊文件',
+        '19.Git配置命令别名',
+        '20.Git操作命令合集'
       ],
       // Terminal
       '/blog/guide/Terminal/': [
