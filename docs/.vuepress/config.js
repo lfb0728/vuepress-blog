@@ -36,6 +36,7 @@ module.exports = {
       }
     ],
     sidebar: {
+      /**学习 */
       // Git
       '/blog/guide/Git/': [
         '1.Git的安装到添加到本地仓库',
@@ -65,6 +66,12 @@ module.exports = {
         '2.Git Bash 常用命令行',
         '3.cmd 常用命令行'
       ],
+      // css预处理
+      '/blog/guide/css-pretreatment/': [
+        '1.Sass基本运用'
+      ],
+
+      /**高级 */
       // 设计模式
       '/blog/design-pattern/': [
         '1.设计模式与开发实践-多态',
@@ -75,7 +82,7 @@ module.exports = {
         '6.策略模式',
         '7.代理模式',
         '8.迭代器模式'
-      ]
+      ],
     }
   },
   lastUpdated: 'Last Updated',
