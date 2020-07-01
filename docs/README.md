@@ -3,7 +3,7 @@ home: true
 heroImage: /avatar.jpg
 heroText: 眼圈发黑
 tagline: 学习笔记分享
-actionText: 前往学习 →
+actionText: 学习笔记 →
 actionLink: /blog/guide/Git/1.Git的安装到添加到本地仓库
 features:
 - title: 简洁至上

@@ -7,7 +7,7 @@ module.exports = {
         link: '/'
       },
       {
-        text: '学习',
+        text: '学习笔记',
         ariaLabel: 'advanced',
         items: [{
           text: 'Git',
@@ -16,7 +16,18 @@ module.exports = {
         {
           text: 'Terminal',
           link: '/blog/guide/Terminal/1.Win10 Terminal 命令使用'
-        }]
+        },
+        {
+          text: 'CSS预处理器',
+          ariaLabel: 'advanced',
+          items: [
+            {
+              text: 'Sass',
+              link: '/blog/guide/css-pretreatment/1.Sass基本运用'
+            }
+          ]
+        }
+      ]
       },
       {
         text: '高级',
@@ -36,7 +47,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      /**学习 */
+      /**学习笔记 */
       // Git
       '/blog/guide/Git/': [
         '1.Git的安装到添加到本地仓库',
@@ -68,7 +79,10 @@ module.exports = {
       ],
       // css预处理
       '/blog/guide/css-pretreatment/': [
-        '1.Sass基本运用'
+        '1.Sass基本运用',
+        '2.Sass数据类型',
+        '3.Sass@-Rules',
+        '4.Sass控制指令'
       ],
 
       /**高级 */
