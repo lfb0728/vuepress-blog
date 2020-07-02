@@ -82,7 +82,9 @@ module.exports = {
         '1.Sass基本运用',
         '2.Sass数据类型',
         '3.Sass@-Rules',
-        '4.Sass控制指令'
+        '4.Sass控制指令',
+        '5.Sass混合指令和函数指令',
+        '6.Sass输出格式'
       ],
 
       /**高级 */
