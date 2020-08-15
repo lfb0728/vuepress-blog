@@ -79,9 +79,9 @@ module.exports = {
     }
   },
   lastUpdated: 'Last Updated',
-  configureWebpack: {
-    output: {
-      publicPath: '/'
-    }
-  }
+  // configureWebpack: {
+  //   output: {
+  //     publicPath: '/'
+  //   }
+  // }
 }
